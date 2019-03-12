@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#
+echo "Ranet Gelstein" # prindib märkide vahel olevad tähed
+echo "ISP118" # prindib märkide vahel olevad tähed
+echo "õppeaine on lahe kuid siiani olen toppama jäänud." # prindib jutumärkide vahel oleva lause
+#
+#
+#skripti lõpp
