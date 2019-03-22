@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#
+#
+echo -n "Sisesta mitu reisiat on bussis: "
+read reisijad
+echo "Bussis on $reisija reisijat..."
+echo -n "Sisesta mitu kohta on bussis: "
+read kohad
+echo "Bussis on $kohad kohta.."
+echo -n "Sisesta busside arv: "
+read busarrv
+echo "Busside arv on $busarrv "
+xx=$(( $kohad * $busarrv ))
+x=$(( $reisijad / $xx ))
+
+echo "Täielikult täidetud busside arv on $x ."
+echo "Puudu jääb $ kohta...:0"
