@@ -1,0 +1,37 @@
+#!/bin/bash
+#
+#
+echo -ne "\n0-esmaspäev"
+echo -ne "\n1-teisipäev"
+echo -ne "\n2-kolmapäev"
+echo -ne "\n3-neljapäev"
+echo -ne "\n4-reede"
+echo -ne "\n5-laupäev"
+echo -ne "\n6-pühapäev"
+echo " "
+echo -n "Mis päeval lähete te reisile(numberväärtus)? "; read algus
+echo -n "Kui pikk on teie reis päevades?  "; read pikkus
+day=$((( $algus + $pikkus ) % 7 ))
+
+p2ev() {
+if [ $day -eq 0 ]; then
+p="esmaspäeval"
+elif [$day -eq 1 ]; then
+p="teisipäeval"
+elif [ $day -eq 2 ]; then
+p="kolmapäeval"
+elif [ $day -eq 3 ]; then
+p="neljapäeval"
+elif [ $day -eq 4 ]; then
+p="reedel"
+elif [ $day -eq 5 ]; then
+p="laupäeval"
+elif [ $day -eq 6 ]; then
+p= "pühapäeval"
+fi
+echo " "
+echo "sa jõuad reisilt tagasi $p"
+}
+
+p2ev
+#
