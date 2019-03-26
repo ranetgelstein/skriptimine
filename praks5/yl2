@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#
+echo "sisesta kolmnurga a külje väärtus: "
+read a
+echo "sisesta kolmnurga b külje väärtus: "
+read b
+echo "sisesta kolmnurga c külje väärtus: "
+read c
+y=`expr $a + $b + $c`
+echo " "
+echo "Kolmnurga ümbermõõte on $y"
+echo -n "kolmnurga pindala on "
+echo "scale=3;sqrt($y * ( $y - $a ) * ( $y - $b ) * ( $y - $b ))" | bc
+#
+#
+#
+
