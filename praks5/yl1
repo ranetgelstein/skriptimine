@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#
+echo -n "A külje väärtus: "
+read x
+echo -n "B külje väärtus: "
+read y
+echo "A külje väärtus on $x ja B külje väärtus on $y "
+echo -n "hüpotenuusi väärtus on: "
+echo "scale=2;sqrt($x^2 + $y^2)" | bc
+# see  on skripti lõpp
+#
