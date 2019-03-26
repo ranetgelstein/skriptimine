@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#selle skripti abil leida logi failid, rirade arv kahanevalt
+find /var -name '*.log' 2>/dev/null
+find /var -name '*.log'| wc -l
+
+#
+#
+#
+#Siin on skripti lõpp
