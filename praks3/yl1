@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#
+#
+DAY=$(date +"%A, %B %d-%Y") #defineerib kuupäeva
+TIME=$(date +"%H:%M") #defineerib kellaaja
+echo  "Today is $DAY" #Kuvanb kuupäeva
+echo "Time is $TIME"  #Kuvab kellaaja
+cal #kuvab  kalendri
+
+# Lõpetab skripti
