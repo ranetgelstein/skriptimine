@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -n "Millisest kaustast soovite backupi teha: "; read kaust
+asukoht="/home/user/skirpitimine/praks4a/backup/"
+fail=$(echo $kaust |awk -F/ '{print $NF}')
+date=$(date + "%Y-%m-%d")
+host=$(hostname -s)
+
+tar -czf $fail.tar.gz $fail
+mv $fail.tar.gz $asukoht/$date-$host-$fail.tar.gz
+
+echo "fail $fail on pakitud $asukoht nime all $date-$host-$fail.tar.gz"
