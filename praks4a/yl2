@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+echo "Sisesta oma ringi raadius(sentimeetrites):"; read r
+ymberm66t=$(echo "$r * 2 * 3.14" | bc)
+pindala=$(echo "$r ^ 2 * 3.14" | bc)
+echo "Ringi pindala on $pindala rutsentimeetrit ja ymbermoot on $ymberm66t cm."
+#
+#
+#
+#
