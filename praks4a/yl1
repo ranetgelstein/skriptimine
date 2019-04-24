@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+read -p "Sisesta oma nimi : " nimi
+echo "Tere tulemast $nimi "
+
+echo -n "Sisesta  oma sunniaasta $sunni: " 
+read aasta
+x=$(expr 2019 - $aasta)
+echo "$nimi, sa oled $x aastat vana"
+#
